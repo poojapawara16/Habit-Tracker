@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bg_gradient"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:paddingTop="36dp"
+    android:paddingBottom="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Stay Consistent 💪"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#2E2E2E"
+        android:shadowColor="#40000000"
+        android:shadowDx="0"
+        android:shadowDy="3"
+        android:shadowRadius="6"
+        android:layout_marginBottom="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvTotalPoints"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginBottom="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAddHabit"
+        android:text="ADD HABIT"
+        android:background="@drawable/bg_button"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:foreground="?attr/selectableItemBackground"
+        android:elevation="8dp"
+        android:layout_marginBottom="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnStats"
+        android:text="VIEW STATISTICS"
+        android:background="@drawable/bg_button"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:foreground="?attr/selectableItemBackground"
+        android:elevation="8dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:elevation="10dp"
+        app:cardCornerRadius="24dp"
+        app:cardUseCompatPadding="true">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:clipToPadding="false"/>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
